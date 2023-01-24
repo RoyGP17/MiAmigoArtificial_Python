@@ -1,3 +1,5 @@
+from LABORATORIO.MiAmigoArtificial.Alerta.Alerta import Alerta
+from LABORATORIO.MiAmigoArtificial.Ayuda.Ayuda import MostrarAyuda
 from LABORATORIO.MiAmigoArtificial.Presentacion.Presentacion import saludar, adivinar_edad, despedida
 
 def recordarNombre():
@@ -19,27 +21,29 @@ def HacerEleccion():
         print("4. HISTORIAS")
         print("5. RECOMENDACIONES")
         print("6. salir")
-        opcion_de_entrada = int(input())
-        if opcion_de_entrada == 1:
-            #OntenerCumpleaños()
-            break
-        elif opcion_de_entrada == 2:
-            #ObtenerAyuda()
-            break
-        elif opcion_de_entrada == 3:
-            #ObtenerChistes()
-            break
-        elif opcion_de_entrada == 4:
-            #ObtenerHistorias()
-            break
-        elif opcion_de_entrada == 5:
-            #ObtenerRecomendaciones()
-            break
-        elif opcion_de_entrada == 6:
-            despedida()
-            break
-        else:
-            print("OPCION INCORRECTA!")
+
+        opcion_de_entrada = int(input("Elige una de las opciones: "))
+        while opcion_de_entrada !=0:
+            if opcion_de_entrada == 1:
+                Alerta()
+                break
+            elif opcion_de_entrada == 2:
+                MostrarAyuda()
+                break
+            elif opcion_de_entrada == 3:
+                #ObtenerChistes()
+                break
+            elif opcion_de_entrada == 4:
+                #ObtenerHistorias()
+                break
+            elif opcion_de_entrada == 5:
+                #ObtenerRecomendaciones()
+                break
+            elif opcion_de_entrada == 6:
+                despedida()
+                break
+            else:
+                print("OPCION INCORRECTA!")
 
 def MiAmigoArtificial():
     saludar()
