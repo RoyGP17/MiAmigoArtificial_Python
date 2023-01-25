@@ -23,5 +23,3 @@ def chistes():
             print("""
 Ingrese una opcion valida por favor        
 """)
-
-chistes()
