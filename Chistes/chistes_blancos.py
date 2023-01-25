@@ -59,7 +59,7 @@ def chistes_blancos():
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 """)
                     print("    Gracias por leer! :)")
-                    input("""Presiona intro para regresar
+                    input("""    Presiona intro para regresar
     >> """)                
                     break
                 if opcion2 == 'no':
@@ -71,7 +71,7 @@ def chistes_blancos():
     Escriba 'si' o 'no' por favor
     """)
         if opcion == 's':
-            print("Gracias Vuelve pronto...")
+            print("    Gracias Vuelve pronto...")
             break
         else:
             print("""                
