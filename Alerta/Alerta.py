@@ -1,7 +1,6 @@
 from Cumpleaños import Cumpleaños
 from WhatsAap import WhatsApp
 
-
 def Alerta():
     while True:
         print("\nHey mas despacio! estas en el mundo de las alertas")

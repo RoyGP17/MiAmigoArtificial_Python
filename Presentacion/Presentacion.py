@@ -1,3 +1,4 @@
+
 def saludar():
     print("\n\tPROJETCS: MI AMIGO ARTIFICIAL")
     print("\nFui creado el año 1969 fecha en la que el hombre dio un salto"
