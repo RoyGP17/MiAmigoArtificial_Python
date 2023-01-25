@@ -1,5 +1,5 @@
-from LABORATORIO.MiAmigoArtificial.Alerta.Cumpleaños import Cumpleaños
-from LABORATORIO.MiAmigoArtificial.Alerta.WhatsAap import WhatsApp
+from Cumpleaños import Cumpleaños
+from WhatsAap import WhatsApp
 
 
 def Alerta():

@@ -1,6 +1,6 @@
-from LABORATORIO.MiAmigoArtificial.Alerta.Alerta import Alerta
-from LABORATORIO.MiAmigoArtificial.Ayuda.Ayuda import MostrarAyuda
-from LABORATORIO.MiAmigoArtificial.Presentacion.Presentacion import saludar, adivinar_edad, despedida
+from Alerta import Alerta
+from Ayuda import MostrarAyuda
+from Presentacion import despedida, saludar, adivinar_edad
 
 def recordarNombre():
     nombre = input("\nBueno ahora es tu turno de decirme como te llamas: ").upper()
