@@ -1,6 +1,6 @@
 def chistes_buenos():
     entrada = False
-    print("Hola, mi nombre es Lucy, y te contare algunos chistes buenos!!")
+    print("Hola, mi nombre es Luis, y te contare algunos chistes buenos!!")
     print("""    
     Para continuar, presiona 'c' 
         
