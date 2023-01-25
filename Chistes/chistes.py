@@ -20,6 +20,4 @@ def chistes():
             print("Gracias, te espero aqui siempre :)")
             break
         else:
-            print("""
-Ingrese una opcion valida por favor        
-""")
+            print("""Ingrese una opcion valida por favor""")

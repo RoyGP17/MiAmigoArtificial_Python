@@ -1,9 +1,8 @@
-import importlib
-
 from Alerta import Alerta
 from Ayuda import MostrarAyuda
 from Presentacion import despedida, saludar, adivinar_edad
 from chistes import chistes
+from Recomendacion import recomendacion
 
 
 def recordarNombre():
@@ -29,22 +28,22 @@ def HacerEleccion():
         opcion_de_entrada = int(input("Elige una de las opciones: "))
         while opcion_de_entrada !=0:
             if opcion_de_entrada == 1:
-                importlib.import_module(Alerta())
+                Alerta()
                 break
             elif opcion_de_entrada == 2:
-                importlib.import_module(MostrarAyuda())
+                MostrarAyuda()
                 break
             elif opcion_de_entrada == 3:
-                importlib.import_module(chistes())
+                chistes()
                 break
             elif opcion_de_entrada == 4:
                 #ObtenerHistorias()
                 break
             elif opcion_de_entrada == 5:
-                #ObtenerRecomendaciones()
+                recomendacion()
                 break
             elif opcion_de_entrada == 6:
-                importlib.import_module(despedida())
+                despedida()
                 break
             else:
                 print("OPCION INCORRECTA!")
