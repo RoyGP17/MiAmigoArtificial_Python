@@ -71,7 +71,7 @@ def recomendacion_academica():
                       "\nla UNSCH Y LA UNSAAC de nuestro pais.")
                 print("1. Carreras de la Universidad Nacional de San Cristobal de Huamanga")
                 print("2. Carreras de la Universidad Naciona de San Antonio de Abad del cusco")
-                #Continuar#
+                #Continuar# :)
         elif opcion == 3:
             break
         else:
