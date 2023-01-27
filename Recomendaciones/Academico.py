@@ -1,3 +1,5 @@
+from Lista import lista_carreras_unsch, lista_carreras_unsaac
+
 
 def recomendacion_academica():
 
@@ -21,13 +23,13 @@ def recomendacion_academica():
 
             opcion1 = int(input("SELECCIONA UNA OPCION: "))
             if opcion1 == 1:
-                print("Se te hace muy dificil al no pensar "
+                print("\nSe te hace muy dificil al no pensar "
                             + "\nen otra cosa mientras intenta prestar atencion, "
                             + "\n pues yo te recomiendo ser dinamico en las "
                             + "\n clases con esto me refiero a que siempre "
                             + "\npregunta a tu maestro por algun minimo detalle")
             elif opcion1 == 2:
-                print("Le genera estres o descuido total de las "
+                print("\nLe genera estres o descuido total de las "
                             + "\nactividades, si este problema no es tratado suele "
                             + "\nllevarse hasta la edad adulta. Tranquilo "
                             + "\nmi querido amigo estoy aqui para recoemdarte lo "
@@ -37,7 +39,7 @@ def recomendacion_academica():
                             + "\nlos deberes del dia por secciones de tiempo.")
             #
             elif opcion1 == 3:
-                print("Sientes que no eres capaz aun cuando te has "
+                print("\nSientes que no eres capaz aun cuando te has "
                             + "\npreparado para realizar un examen, exposicion o cualquier "
                             + "\notro tipo de actividad, talvez hasta puedes ser inseguro "
                             + "\nen la entrega adecuadad de una materia"
@@ -51,7 +53,7 @@ def recomendacion_academica():
             else:
                 print("Elija una opcion correcta")
         elif opcion == 2:
-            print("Oye! te recomiendo estas carreras... estas son las carreras universitarias "
+            print("\nOye! te recomiendo estas carreras... estas son las carreras universitarias "
                   "\nmás populares y con mayor demanda en el mercado laboral actualmente:")
             print("- Ingeniería en Sistemas")
             print("- Administración de Empresas")
@@ -63,15 +65,24 @@ def recomendacion_academica():
             print("- Ingeniería Industrial")
             print("- Ingeniería Eléctrica")
             print("- Ingeniería de Software")
-            print("Ten en cuenta que estas recomendaciones pueden variar dependiendo de la situación "
+            print("\nTen en cuenta que estas recomendaciones pueden variar dependiendo de la situación "
                   "\neconómica y el mercado laboral en tu país o región. Es importante investigar "
                   "\ny hacer una elección informada antes de elegir una carrera universitaria.")
-            while True:
-                print("A continuacion puedo mostrarte algunas carreras de las universidades como "
-                      "\nla UNSCH Y LA UNSAAC de nuestro pais.")
-                print("1. Carreras de la Universidad Nacional de San Cristobal de Huamanga")
-                print("2. Carreras de la Universidad Naciona de San Antonio de Abad del cusco")
-                #Continuar# :)
+            entrada = input("\n¿Deseas ver las carreras de algunas universidades? si/no : ").upper()
+            if entrada == "SI":
+                    print("\nA continuacion puedo mostrarte algunas carreras de las universidades como "
+                          "\nla UNSCH Y LA UNSAAC de nuestro pais.")
+                    print("1. Carreras de la Universidad Nacional de San Cristobal de Huamanga")
+                    print("2. Carreras de la Universidad Naciona de San Antonio de Abad del cusco")
+                    entrada2 = int(input("SELECCIONA UNA OPCION: "))
+                    if entrada2 == 1:
+                        lista_carreras_unsch()
+                    elif entrada2 == 2:
+                        lista_carreras_unsaac()
+                    else:
+                        print("OPCION INCORRECTA")
+            else:
+                print("\nHata luego y recuerda estudiar lo que mas te gusta hacer!!")
         elif opcion == 3:
             break
         else:
