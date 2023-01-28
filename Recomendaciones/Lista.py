@@ -79,7 +79,5 @@ def lista_carreras_unsaac():
                       "Carrera profesional de educacion de ciancias sociales",
                       "Carrera profesional de educacion fisica",
                       "Carrera profesional de educuacion primaria"]
-    for i in lista_carreras_unsaac():
+    for i in CarrerasUnsaac:
         print(i)
-
-lista_carreras_unsch()
