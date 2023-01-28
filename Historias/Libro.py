@@ -37,6 +37,7 @@ class libro:
 
     def leer_libro():
         print(self.Get_resumen())
+        print("Lucho")
 
 
 ### TODAS LAS HERENCIAS
