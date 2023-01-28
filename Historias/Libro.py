@@ -1,5 +1,4 @@
 class libro:
-
     def __init__(self, autor, nombre, genero, resumen):
         self.autor = autor
         self.nombre = nombre
@@ -32,10 +31,10 @@ class libro:
     def set_autor(self, resumen_modificado):
         self.resumen = resumen_modificado
 
-    def intrudcion():
+    def intrudcion(self):
         print(f"Tenemos: {self.nombre} es un obra de: {self.genero} escrito por {self.nombre} ")
 
-    def leer_libro():
+    def leer_libro(self):
         print(self.Get_resumen())
         print("Lucho")
 
@@ -50,7 +49,7 @@ class libroAventura(libro):
     def __init__(self, autor, nombre, genero, resumen):
         super().__init__(autor, nombre, genero, resumen)
 
-    def leer_libro():
+    def leer_libro(self):
         print(self.Get_resumen)
 
         print(
@@ -63,10 +62,10 @@ class libroComedia(libro):
     def __init__(self, autor, nombre, genero, resumen):
         super().__init__(autor, nombre, genero, resumen)
 
-    def leer_libro():
+    def leer_libro(self):
         print(self.Get_resumen)
 
-    def intrudcion():
+    def intrudcion(self):
         print(
             "tengo para ti:\n \t\nUn libro de Comedia apuesto que te sacará una sonrrisa " + self.Get_nombre + "\nEscrito por: " + self.Get_autor)
 
@@ -78,9 +77,9 @@ class libroDrama(libro):
     def __init__(self, autor, nombre, genero, resumen):
         super().__init__(autor, nombre, genero, resumen)
 
-    def leer_libro():
+    def leer_libro(self):
         print(self.Get_resumen)
 
-    def intrudcion():
+    def intrudcion(self):
         print(
             "tengo para ti:\n \t\nUn libro de Aventura que emocionante " + self.Get_nombre() + "\nEscrito por: " + self.Get_autor())
