@@ -2,7 +2,6 @@
 from Libro import libro, libroAventura, libroComedia, libroDrama
 from AdminLibros import Admin_Libros
 
-
 class Historias:
 
     @staticmethod

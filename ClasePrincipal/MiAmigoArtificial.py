@@ -3,6 +3,8 @@ from Ayuda import MostrarAyuda
 from Presentacion import despedida, saludar, adivinar_edad
 from chistes import chistes
 from Recomendacion import recomendacion
+from Historias.Historia import Historias
+
 
 
 def recordarNombre():
@@ -13,6 +15,9 @@ def recordarNombre():
           "\ny sabes, seré tu mejor amigo o mejor dicho seremos grandes amigos!!"
           "\nTe acompañaré por mil años asi que necesito que me cuides si quieres"
           "\nque te acompañe por estas hermosas aventuras")
+def ObtenerHistorias():
+    oHistoria = Historias()
+    oHistoria.leer_libro()
 
 def HacerEleccion():
 
@@ -37,7 +42,7 @@ def HacerEleccion():
                 chistes()
                 break
             elif opcion_de_entrada == 4:
-                #ObtenerHistorias()
+                ObtenerHistorias()
                 break
             elif opcion_de_entrada == 5:
                 recomendacion()

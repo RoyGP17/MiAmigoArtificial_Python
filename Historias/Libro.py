@@ -28,7 +28,7 @@ class libro:
     def Get_resumen(self):
         return self.resumen
 
-    def set_autor(self, resumen_modificado):
+    def set_resumen(self, resumen_modificado):
         self.resumen = resumen_modificado
 
     def intrudcion(self):
@@ -52,8 +52,7 @@ class libroAventura(libro):
     def leer_libro(self):
         print(self.Get_resumen)
 
-        print(
-            "tengo para ti:\n \t\nUn libro de Aventura que emocionante " + self.Get_nombre() + "\nEscrito por: " + self.Get_autor())
+        print("tengo para ti:\n \t\nUn libro de Aventura que emocionante " + self.Get_nombre() + "\nEscrito por: " + self.Get_autor())
 
 
 ###LIbro Comedia ####
@@ -65,9 +64,10 @@ class libroComedia(libro):
     def leer_libro(self):
         print(self.Get_resumen)
 
+
     def intrudcion(self):
-        print(
-            "tengo para ti:\n \t\nUn libro de Comedia apuesto que te sacará una sonrrisa " + self.Get_nombre + "\nEscrito por: " + self.Get_autor)
+
+        print("tengo para ti:\n \t\nUn libro de Comedia apuesto que te sacará una sonrrisa " + self.Get_nombre() + "\nEscrito por: " + self.Get_autor())
 
 
 ## Libro Drama ####
@@ -81,5 +81,4 @@ class libroDrama(libro):
         print(self.Get_resumen)
 
     def intrudcion(self):
-        print(
-            "tengo para ti:\n \t\nUn libro de Aventura que emocionante " + self.Get_nombre() + "\nEscrito por: " + self.Get_autor())
+        print("tengo para ti:\n \t\nUn libro de Aventura que emocionante " + self.Get_nombre() + "\nEscrito por: " + self.Get_autor())
