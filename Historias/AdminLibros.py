@@ -1,13 +1,13 @@
 import random
 
-from Libro import libro
+from Libro import libro,libroAventura,libroComedia,libroDrama
 
 class Admin_Libros:
 
     def __init__(self):
-        self.listaLibrosDeDrama = [None] * 10
-        self.listaLibrosDeComedia = [None] * 10
-        self.listaLibrosDeAventura = [None] * 10
+        self.listaLibrosDeDrama = libroDrama([None]*10)
+        self.listaLibrosDeComedia = libroComedia([None]*10)
+        self.listaLibrosDeAventura = libroAventura([None]*10)
 
     def agrega_libro(self, nombre, genero, orden):
 
