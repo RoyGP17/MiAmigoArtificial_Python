@@ -3,7 +3,7 @@ from Ayuda import MostrarAyuda
 from Presentacion import despedida, saludar, adivinar_edad
 from chistes import chistes
 from Recomendacion import recomendacion
-from Historias.Historia import Historias
+from Historia import Historias
 print("HOLA")
 
 
