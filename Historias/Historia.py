@@ -4,7 +4,6 @@ from AdminLibros import Admin_Libros
 
 class Historias:
 
-
     def leer_libro(self):
         objecto_LibroDrama1 = libroDrama("Henry James", "\n\tLas bostonianas", "Drama",
                                          "\nEl escenario de la historia es Boston y su barrio; relata un episodio relacionado con el denominado «movimiento de la mujer». "
