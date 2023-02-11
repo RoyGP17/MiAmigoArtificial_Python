@@ -6,9 +6,9 @@ def Cumpleaños():
         "EDERSON": date(2004, 6, 27),
         "WILMER": date(1997, 6, 19),
         "ELVIS": date(1998, 12, 24),
-        "LUCY": date(2002, 5, 30),
+        "LUCY": date(2002, 5, 31),
         "ROY": date(2001, 12, 6),
-        "BICHENSO": date(2002, 7, 31),
+        "BICHENSO": date(2002, 6, 13),
         "LUIS": date(2002, 5, 14),
         "ANGUELO": date(2015, 12, 3)
     }
