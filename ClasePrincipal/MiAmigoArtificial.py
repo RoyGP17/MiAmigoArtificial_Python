@@ -4,7 +4,6 @@ from Presentacion import despedida, saludar, adivinar_edad
 from chistes import chistes
 from Recomendacion import recomendacion
 from Historias.Historia import Historias
-print("HOLA")
 
 
 def recordarNombre():
